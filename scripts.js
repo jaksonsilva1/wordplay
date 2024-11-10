@@ -145,3 +145,8 @@ function login() {
         alert("Usuário ou senha incorretos.");
     }
 }
+
+//redireciona para a agina pergunta ao clicar em concluir leitura
+function concluirLeitura() {
+
+    window.location.href = 'pergunta.html'}
