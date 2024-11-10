@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar História</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Selecionar História</h1>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Pesquisar">
+            <button onclick="pesquisar()">
+                <img src="search-icon.png" alt="Pesquisar" class="search-icon">
+            </button>
+        </div>
+        <div class="story-grid">
+            <a href="leitura.html" class="story-item" onclick="selecionarHistoria(1); event.preventDefault();">
+                <img src="historia1.jpg" alt="História 1">
+                <p>História 1</p>
+            </a>
+            <a href="leitura.html" class="story-item" onclick="selecionarHistoria(2); event.preventDefault();">
+                <img src="historia2.jpg" alt="História 2">
+                <p>História 2</p>
+            </a>
+            <a href="leitura.html" class="story-item" onclick="selecionarHistoria(3); event.preventDefault();">
+                <img src="historia3.jpg" alt="História 3">
+                <p>História 3</p>
+            </a>
+            <!-- Adicione mais histórias conforme necessário -->
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
